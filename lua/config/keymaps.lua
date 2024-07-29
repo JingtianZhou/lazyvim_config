@@ -10,3 +10,6 @@ map("n", "<C-e>", "^")
 
 -- 取消高亮
 map("n", "<leader>nh", ":nohl<CR>")
+
+map("n", "J", "10j")
+map("n", "K", "10k")
