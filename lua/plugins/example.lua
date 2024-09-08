@@ -89,6 +89,11 @@ return {
         end)
       end,
     },
+    optss = function()
+      local keys = require("lazyvim.plugins.lsp.keymaps").get()
+      -- change keys
+      keys[#keys + 1] = { "K", "10k" }
+    end,
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options

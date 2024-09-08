@@ -8,6 +8,7 @@ local unmap = vim.keymap.del
 unmap("n", "<leader><space>", { desc = "Find Files (root dir)" })
 
 map("n", "<leader>w", ":w<cr>")
+map("n", "<leader>q", ":q!<cr>")
 map("n", "<leader>wq", ":wq<cr>")
 
 -- insert 模式下，跳到行首行尾
@@ -16,9 +17,12 @@ map("i", "<C-e>", "<ESC>A")
 map("n", "<C-a>", "^")
 map("n", "<C-e>", "$")
 
+-- switch buffer
+map("n", "<leader>[", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+map("n", "<leader>]", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+
 -- 取消高亮
 map("n", "<leader>nh", ":nohl<CR>")
 
 map("n", "<leader>j", "J")
 map("n", "J", "10j")
-map("n", "K", "10k")
