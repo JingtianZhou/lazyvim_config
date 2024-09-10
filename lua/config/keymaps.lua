@@ -26,3 +26,4 @@ map("n", "<leader>nh", ":nohl<CR>")
 
 map("n", "<leader>j", "J")
 map("n", "J", "10j")
+map("n", "K", "10k")
